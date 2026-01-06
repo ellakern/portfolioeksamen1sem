@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grundlæggende JS</title>
+    <link rel="icon" type="image/png" href="billeder/favicon_v4.png">
+    <link rel="stylesheet" href="CSS/generel.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/form.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="billeder/ek_grundl_logo3.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Velkommen</a></li>
+                <li><a href="tema3.html">UX/UI</a></li>
+                <li><a href="tema4.html">JS</a></li>
+                <li><a href="tema5.html">Indhold</a></li>
+                <li><a href="om_mig.html">Om mig</a></li>
+            </ul>
+
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="page bg-tegning-2">
+        <h1>Grundlæggende JS</h1>
+
+        <div class="projekt_grid">
+            <div>
+                <div>
+                    <h2>Emergency site</h2>
+                    <p>I dette forløb arbejdede vi med flere nye værktøjer og teknologier, som jeg ikke havde erfaring
+                        med tidligere. For
+                        første gang blev vi introduceret til Adobe Illustrator, hvor vi designede grafiske elementer,
+                        som skulle indgå i et
+                        såkaldt emergency site. Samtidig begyndte vi at arbejde med JavaScript, hvilket gav et første
+                        indblik i, hvordan man kan
+                        skabe funktionalitet og interaktion på et website.
+                    </p>
+                    <p>Forløbet byggede også videre på vores eksisterende viden om CSS, hvor vi udviklede vores
+                        færdigheder yderligere, og vi
+                        arbejdede med forms for første gang. Arbejdet med et emergency site gav en konkret ramme for at
+                        afprøve de nye værktøjer
+                        og metoder i praksis. Selvom jeg ikke kom helt i dybden med alle dele af projektet, har forløbet
+                        givet mig en bedre
+                        forståelse for sammenhængen mellem design og kode, hvilket jeg vil uddybe nærmere senere i
+                        opgaven.
+                    </p>
+                    <p>Du kan besøge hjemmesiden <a class="knap"
+                            href="https://ellakern.github.io/emergency_site/">her!</a></p>
+                </div>
+            </div>
+
+            <div class="grid_1-1">
+                <div>
+                    <h2>Fra ide til animation</h2>
+                    <p>Forløbet startede med, at alle skulle definere en emergency. Min emergency var at have tømmermænd
+                        og et tomt køleskab.
+                        Jeg brainstormede forskellige emergencys, udvalgte målgrupper og kombinerede dem tilfældigt uden
+                        at kigge. Herefter
+                        lavede jeg en Crazy 8 for hurtigt at udvikle idéer. Ud fra dette designede jeg en simpel
+                        stregtegning i Adobe
+                        Illustrator, som jeg animerede og brugte som det visuelle udgangspunkt for løsningen.
+                    </p>
+                </div>
+                <div>
+                    <img class="billede-til-tekst" src="billeder/emergency_adobe.webp" alt="adobe">
+                </div>
+            </div>
+
+            <div class="grid_1-1">
+                <div>
+                    <h2>JavaScript og interaktivitet</h2>
+                    <p>Efterfølgende arbejdede jeg med at gøre animationen interaktiv ved hjælp af JavaScript på
+                        hjemmesiden. Jeg nåede ikke
+                        helt i mål med alle funktioner, men man kan stadig fornemme idéen og intentionen bag
+                        interaktionen. En del af opgaven
+                        var også at lave en form, som jeg ikke nåede at implementere fuldt ud. I stedet har jeg lavet en
+                        lille form nederst i
+                        denne HTML, som kan ses som en prototype på funktionaliteten.
+                    </p>
+                </div>
+                <div>
+                    <img class="billede-til-tekst" src="billeder/emergency_front.webp" alt="front">
+                </div>
+            </div>
+
+            <div class="grid_1-1">
+                <div>
+                    <h2>Dark mode og CSS-variabler</h2>
+                    <p>I forløbet arbejdede jeg også med dark mode og brugen af CSS-variabler via var(--color-). Ved at
+                        definere farver i :root
+                        kan man nemt skifte tema og skabe konsistens på tværs af sitet. På denne hjemmeside har jeg
+                        opbygget mit farvesystem med
+                        flere variabler, som gør det muligt at justere udtrykket og implementere dark mode uden at ændre
+                        hele CSS-strukturen.
+                        Det giver både fleksibilitet og bedre overblik i koden.
+                    </p>
+                </div>
+                <div>
+                    <img class="billede-til-tekst" src="billeder/emergency_dark.webp" alt="dark">
+                </div>
+            </div>
+        </div>
+
+        <div class="projekt_grid">
+            <h2>Form</h2>
+            <p>Her er en lille, lidt tilfældig form:</p>
+            <form id="webform">
+                <fieldset>
+                    <div class="form-group1">
+                        <label for="f-text">Navn: <span class="required">*</span></label>
+                        <input id="f-text" type="text" name="hundname" placeholder="fulde navn"
+                            aria-describedby="fname-error" required />
+                        <p class="error-message" id="fname-error"></p>
+                    </div>
+                    <div class="form-group1">
+                        <label for="f-email">Email: <span class="required">*</span></label>
+                        <input id="f-email" type="text" name="hundname" placeholder="email"
+                            aria-describedby="fname-error" required />
+                        <p class="error-message" id="fname-error"></p>
+                    </div>
+                    <div class="form-group1">
+                        <label for="f-email">Telefonnummer: <span class="required">*</span></label>
+                        <input id="f-email" type="text" name="hundname" placeholder="telefonnummer"
+                            aria-describedby="fname-error" required />
+                        <p class="error-message" id="fname-error"></p>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="form-group2">
+                        <label for="f-date">Fødselsdato: <span class="required">*</span></label>
+                        <input id="f-date" type="date" name="dato" aria-describedby="fdate-error" required />
+                        <p class="error-message" id="fdate-error"></p>
+                    </div>
+                </fieldset>
+
+
+                <fieldset>
+                    <div class="event">
+                        <label class="place" for="event">Beskæftigelse: <span class="required">*</span></label>
+                        <input id="event" type="text" name="event" placeholder="Studerende, underviser, gæst...?">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="antal">
+                        <label for="slider">Antal minutter brugt på denne side:</label>
+                        <input type="range" id="slider" name="slider" min="100" max="1000" value="500" />
+                        <span id="sliderValue">60 </span>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="checkbox1">
+                        <hp>Hvordan har din oplevelse været?: <span class="required"></span></hp>
+                        <label>
+                            <input type="checkbox" id="check1" name="face" value="mgod">
+                            Meget god
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check2" name="insta" value="god">
+                            God
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check3" name="spotify" value="middel">
+                            Middel
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check3" name="spotify" value="dårlig">
+                            Dårlig
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check4" name="google" value="mdårlig">
+                            Meget dårlig
+                        </label>
+
+                    </div>
+                </fieldset>
+                <div class="form-group4">
+                    <label for="accept_terms">
+                        Accept terms
+                        <input type="checkbox" id="accept_terms" name="accept_terms" value="yes" required />
+                        <span class="required">*</span>
+                    </label>
+                    <p class="error-message" id="terms-error"></p>
+                </div>
+                <button id="submit_btn" type="submit">SEND</button>
+
+            </form>
+        </div>
+
+        <div class="stjerner">
+            <p>★★★★★★★★★★★★★★★★★</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="grid_footer">
+            <div>
+                <p>Ella Kern Schandorff <br>
+                    ★ <br>
+                    Studiemail: elsc0001@stud.ek.dk
+                </p>
+            </div>
+            <div>
+                <p>Multimediedesign <br>
+                    1. semester <br>
+                    Januar 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/burger.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+#form-info {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+/****** styling af boksene ************/
+
+#form-section {
+  max-width: 800px; /* Bredden på boksene */
+  margin: 0 auto; /* ← dette gør at boksen kommer i midten */
+}
+
+#webform {
+  margin: 0 auto;
+  width: 100%;
+}
+#form-section,
+#form-section label,
+#form-section p,
+#form-section h2,
+#form-section legend {
+  color: white;
+}
+
+.form-group2 {
+  margin-top: 1.5rem;
+}
+
+.event {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.antal {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group4 {
+  margin-top: 1.5 rem;
+}
+.form-group1 {
+  margin-top: 1.5rem;
+}
+
+.checkbox1 label {
+  display: block;
+  margin-bottom: 0.5rem; /* luft mellem dem */
+}
+#slider-form {
+  width: 1000px; /* gør formen smallere */
+  margin: 20px auto; /* centrerer på siden */
+  text-align: center;
+  color: white;
+}
+
+input[type="range"] {
+  width: 40%; /* fylder nu kun den mindre form */
+  accent-color: var(--color-ottendefarve); /* prik og linje farve */
+  margin: 10px 0;
+}
+
+#sliderValue {
+  font-size: 1rem; /* lidt mindre tal */
+  font-weight: bold;
+}
+
+form {
+  accent-color: var(--color-ottendefarve);
+}
+
+.required {
+  color: red; /* 🔴 gør stjernen rød */
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+/****** styling af knap ************/
+
+#submit_btn {
+  margin-top: 2rem;
+  display: block;
+  margin: 1rem auto;
+  background-color: var(
+    --color-ottendefarve
+  ); /* vælg din farve (rødlig nuance fx) */
+  color: white; /* tekstfarve */
+  border: none; /* fjern standardkant */
+  border-radius: 50px; /* gør den rund (jo større tal, jo rundere) */
+  padding: 0.6rem 1.5rem; /* højde og bredde – justér efter smag */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer; /* får musen til at blive en hånd */
+  transition: all 0.2s ease; /* glidende hover-effekt */
+  margin-bottom: 3rem;
+}
+
+#submit_btn:hover {
+  background-color: var(--color-femtefarve); /* lidt mørkere farve ved hover */
+  transform: scale(1.05); /* gør knappen lidt større når man peger på den */
+}

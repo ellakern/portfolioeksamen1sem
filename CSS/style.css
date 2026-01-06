@@ -1,0 +1,285 @@
+/*************** Grids *********************/
+.grid_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 840px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+
+  .grid_1-1:nth-of-type(even) > div:first-child {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .grid_1-1:nth-of-type(even) > div:last-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .projekt_grid {
+    place-self: center;
+    max-width: 75%;
+  }
+
+  .alm_grid {
+    place-self: center;
+    max-width: 60%;
+  }
+}
+
+/*************** billeder *********************/
+@media (max-width: 840px) {
+  .billede-til-tekst {
+    margin: 1rem 0rem 1rem 0rem;
+  }
+}
+
+.billede-til-tekst {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/*************** projekter *********************/
+.temaer_førstesemester {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 20px 80px 20px 80px;
+}
+
+.mod_bandet {
+  margin: 1rem;
+}
+
+.mod-bandet-img {
+  margin-bottom: 1rem;
+}
+
+.projekt {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 3px solid var(--color-ottendefarve);
+  position: relative;
+  cursor: pointer;
+}
+
+.billede {
+  position: relative;
+}
+
+.img.hover {
+  display: none;
+}
+
+.medlem img {
+  width: 100%;
+  display: block;
+}
+
+/* Tekst ovenpå billede */
+.projekt .om_medlem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+
+  color: var(--color-ottendefarve);
+  font-family: "BBH Bogle", sans-serif;
+  letter-spacing: 2px;
+}
+
+.projekt h3 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.projekt h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.projekt-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+@media (min-width: 700px) {
+  .temaer_førstesemester {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    padding: 20px 70px 40px 70px;
+  }
+
+  .mod_bandet {
+    place-self: center;
+    width: 60%;
+  }
+
+  .billede {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .img {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+
+  .img.hover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  .projekt:hover .img.hover {
+    opacity: 1;
+  }
+
+  .projekt:hover .img.normal {
+    opacity: 0;
+  }
+
+  .projekt:hover .img {
+    transform: scale(1.05);
+  }
+}
+
+/*************** scroll ting *********************/
+@keyframes site-progress {
+  from {
+    scale: 0 1;
+  }
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  block-size: 4px;
+  background-color: var(--color-femtefarve);
+
+  animation: site-progress linear;
+  transform-origin: 0;
+  animation-timeline: scroll();
+  z-index: 1000;
+}
+
+@keyframes clip-reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(0 100% 0 100%);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.billede-til-tekst {
+  animation: clip-reveal ease-out both;
+  animation-timeline: view();
+  animation-range: 10% 45%;
+}
+
+/*************** test *********************/
+.knap {
+  padding: 14px 20px;
+  display: inline-block;
+  text-decoration: none;
+
+  background-color: var(--color-femtefarve);
+  color: var(--color-ottendefarve);
+  font-size: 1rem;
+
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.knap:hover {
+  background-color: var(--color-ottendefarve);
+  color: var(--color-femtefarve);
+  transform: scale(1.05);
+}
+
+/*************** test *********************/
+
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page > * {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-tegning-1::before {
+  background-image: url("/billeder/tat_doggo.webp");
+  background-repeat: no-repeat;
+  background-size: 90vw auto;
+  background-position: center;
+}
+
+.bg-tegning-2::before {
+  background-image: url("/billeder/tat_spiderview.webp");
+  background-repeat: no-repeat;
+  background-size: 80vw auto;
+  background-position: center;
+}
+
+.bg-tegning-3::before {
+  background-image: url("/billeder/tat_engel.webp");
+  background-repeat: no-repeat;
+  background-size: 80vw auto;
+  background-position: center;
+}
+
+.bg-tegning-4::before {
+  background-image: url("/billeder/tat_handblomst.webp");
+  background-repeat: no-repeat;
+  background-size: 80vw auto;
+  background-position: center;
+}
+
+.bg-tegning-5::before {
+  background-image: url("/billeder/tat_collage.webp");
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  background-position: center;
+}

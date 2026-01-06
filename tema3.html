@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grundlæggende UX/UI</title>
+    <link rel="icon" type="image/png" href="billeder/favicon_v4.png">
+    <link rel="stylesheet" href="CSS/generel.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="billeder/ek_grundl_logo3.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Velkommen</a></li>
+                <li><a href="tema3.html">UX/UI</a></li>
+                <li><a href="tema4.html">JS</a></li>
+                <li><a href="tema5.html">Indhold</a></li>
+                <li><a href="om_mig.html">Om mig</a></li>
+            </ul>
+
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="page bg-tegning-3">
+        <h1>Grundlæggende ux/ui</h1>
+
+        <div class="projekt_grid">
+
+            <div>
+                <h2>KunstPOP</h2>
+                <p>I dette forløb arbejdede jeg med grundlæggende UX/UI og lærte, hvad det vil sige at designe
+                    digitale løsninger med fokus
+                    på brugeren. Jeg blev introduceret til forskellige metoder inden for research, idéudvikling,
+                    prototyper og brugertest,
+                    og jeg lærte, hvordan man kan bruge feedback fra brugere til at forbedre sit design. Undervejs
+                    arbejdede jeg med både
+                    design i Figma og udvikling af et simpelt website, hvor jeg omsatte mine idéer til en færdig
+                    løsning. Forløbet gav mig
+                    en bedre forståelse for sammenhængen mellem design, brugervenlighed og brugeroplevelse.
+                </p>
+                <p>Som produkt udviklede jeg hjemmesiden KunstPOP, der samler og giver overblik over kunstrelaterede
+                    pop-up events i
+                    København. I arbejdet med hjemmesiden havde jeg særligt fokus på brugeroplevelsen, hvor
+                    funktionalitet og struktur
+                    skulle gøre det nemt for brugeren at finde relevante events. Derudover arbejdede jeg med det
+                    visuelle udtryk, så
+                    designet understøttede indholdet og skabte en sammenhængende og brugervenlig oplevelse. Gennem
+                    research og test
+                    justerede jeg løbende løsningen for at sikre, at KunstPOP var intuitiv og tilpasset målgruppens
+                    behov.</p>
+                <p>Du kan besøge hjemmesiden <a class="knap" href="https://ellakern.github.io/kunst_pop/">her!</a>
+                </p>
+            </div>
+
+            <div class="grid_1-1">
+                <div>
+                    <h2>UX/UI</h2>
+                    <p>Jeg startede med at tage udgangspunkt i min interesse for kunst og kultur, samt en stor glæde for
+                        pop-up arrangementer.
+                        Dette blev i processen kogt ind til en hjemmeside der samler kunst-relaterede pop-up
+                        arrangementer i københavn; en
+                        hjemmeside jeg sagtens kunne finde på at bruge i min dagligdag.
+                    </p>
+                </div>
+                <div>
+                    <img class="billede-til-tekst" src="billeder/kunstpop_front.webp" alt="kunstpop front">
+                </div>
+            </div>
+
+            <div class="grid_1-1">
+                <div>
+                    <h2>Test</h2>
+                    <p>Som en del af forløbet arbejdede jeg med forskellige former for test for at evaluere og forbedre
+                        hjemmesiden. Jeg
+                        gennemførte blandt andet 5-sekunders test for at undersøge, hvilket førstehåndsindtryk brugerne
+                        fik, samt
+                        tænke-højt-test, hvor brugerne satte ord på deres oplevelse, mens de brugte siden. Derudover
+                        anvendte jeg Lighthouse til
+                        at teste sidens performance, tilgængelighed og tekniske kvalitet. Testene gav værdifuld
+                        feedback, som jeg brugte til at
+                        justere og forbedre brugeroplevelsen.
+                    </p>
+                </div>
+                <div>
+                    <img class="billede-til-tekst" src="billeder/kunstpop_test.webp" alt="kunstpop test">
+                </div>
+            </div>
+
+            <div class="grid_1-1">
+                <div>
+                    <h2>Udvalgt kode</h2>
+                    <p>I udviklingen af siden og den udtryk, ønskede jeg under “Eventoversigt” et bestemt grid;
+                        Tekst - billede
+                        Billede - tekst
+                        Tekst - billede
+                        Osv.
+                    </p>
+                    <p>Men jeg fik det aldrig til at fungere! Derfor valgt jeg på denne hjemmeside at det var netop det
+                        grid jeg ville have, og
+                        til min egen store glæde, fik jeg det til at fungere ved hjælp af first-child/last-child og
+                        gridcollumn og -row.</p>
+                </div>
+                <div>
+                    <img class="billede-til-tekst" src="billeder/kunstpop_kode.webp" alt="kunstpop kode">
+                </div>
+            </div>
+
+            <div class="stjerner">
+                <p>★★★★★★★★★★★★★★★★★</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="grid_footer">
+            <div>
+                <p>Ella Kern Schandorff <br>
+                    ★ <br>
+                    Studiemail: elsc0001@stud.ek.dk
+                </p>
+            </div>
+            <div>
+                <p>Multimediedesign <br>
+                    1. semester <br>
+                    Januar 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/burger.js"></script>
+</body>
+
+</html>
