@@ -250,35 +250,40 @@ html::before {
 }
 
 .bg-tegning-1::before {
-  background-image: url("/billeder/tat_doggo.webp");
+  content: "";
+  background-image: url("../billeder/tat_doggo.webp");
   background-repeat: no-repeat;
   background-size: 90vw auto;
   background-position: center;
 }
 
 .bg-tegning-2::before {
-  background-image: url("/billeder/tat_spiderview.webp");
+  content: "";
+  background-image: url("../billeder/tat_spiderview.webp");
   background-repeat: no-repeat;
   background-size: 80vw auto;
   background-position: center;
 }
 
 .bg-tegning-3::before {
-  background-image: url("/billeder/tat_engel.webp");
+  content: "";
+  background-image: url("../billeder/tat_engel.webp");
   background-repeat: no-repeat;
   background-size: 80vw auto;
   background-position: center;
 }
 
 .bg-tegning-4::before {
-  background-image: url("/billeder/tat_handblomst.webp");
+  content: "";
+  background-image: url("../billeder/tat_handblomst.webp");
   background-repeat: no-repeat;
   background-size: 80vw auto;
   background-position: center;
 }
 
 .bg-tegning-5::before {
-  background-image: url("/billeder/tat_collage.webp");
+  content: "";
+  background-image: url("../billeder/tat_collage.webp");
   background-repeat: no-repeat;
   background-size: 100vw auto;
   background-position: center;
